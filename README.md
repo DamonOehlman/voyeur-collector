@@ -39,6 +39,8 @@ app.configure(function() {
 
 By default this will expose a `/samples` route that will respond to both request for samples in the last 30 seconds (configurable) and also samples after a certain tick count using the `/samples/123456789` route.
 
+An example of this kind of configuration is available in the [voyeur.io collector demo site](https://github.com/voyeur-io/demosite).
+
 ## Advanced Usage
 
 To be completed
