@@ -1,33 +1,35 @@
 {
-	"name": "voyeur-collector",
-	"description": "Collection agents for server statistics",
-	"author": "Damon Oehlman <damon.oehlman@sidelab.com>",
-	"tags": ["monitoring", "system"],
-  	"version": "0.0.1",
-  	
-	"main": "index.js",
-	
-  	"dependencies": {
-    	"cron": "0.1.x",
+    "name": "voyeur",
+    "description": "Voyeur.io server monitoring collection agents",
+    "author": "voyeur.io <dev@voyeur.io>",
+    "tags": ["monitoring", "system"],
+    "version": "0.0.1",
+    
+    "main": "index.js",
+    "engines": { "node": "0.4.x" },
+        
+    "dependencies": {
+        "cron": "0.1.x",
         "node-leveldb": "https://github.com/DamonOehlman/node-leveldb/tarball/master"
-  	},
-  	
-  	"devDependencies": {
-  	    "vows": "0.5.x"
-  	},
-  	
-	"repository": {
-		"type": "git",
-		"url": "http://github.com/voyeur-io/voyeur-collector.git"
-	},
-	
-	"bugs": {
-		"web": "http://github.com/voyeur-io/voyeur-collector/issues"
-	},
-	
-	"contributors": [
-	    "Liam McClennan <liam.mclennan@gmail.com> (http://hackington.net/)",
-	    "Liam Oehlman <liam.oehlman@sidelab.com>",
-	    "Todd Jackson <jackson.todd.a@gmail.com>"
-	]
+    },
+    
+    "devDependencies": {
+        "vows": "0.5.x"
+    },
+    
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/voyeur-io/voyeur-collector.git"
+    },
+    
+    "bugs": {
+        "web": "http://github.com/voyeur-io/voyeur-collector/issues"
+    },
+    
+    "contributors": [
+        "Damon Oehlman <damon.oehlman@sidelab.com> (http://www.sidelab.com/)",
+        "Liam McClennan <liam.mclennan@gmail.com> (http://hackington.net/)",
+        "Liam Oehlman <liam.oehlman@sidelab.com>",
+        "Todd Jackson <jackson.todd.a@gmail.com>"
+    ]
 }

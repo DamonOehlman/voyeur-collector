@@ -1,3 +1,3 @@
-# voyeur.io collector
+# Voyeur.io Collector
 
-The collector is where all the fun begins.
+The collector is the engine room of Voyeur.
