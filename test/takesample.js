@@ -1,11 +1,16 @@
 var collector = require('../lib/collector'),
-    collectionProcess;
+    collectionProcess,
+    startTick = new Date().getTime();
 
 console.log('Collecting 5 seconds worth of data');
 
 collectionProcess = collector.collectToDB();
-collectionProcess.collector.on('data', function(agentId, data, details) {
-   console.log(agentId, data); 
-});
-
-setTimeout(collectionProcess.stop, 5000);
+setTimeout(function() {
+    collectionProcess.db.getSince(startTick, function(results) {
+        for (var key in results.items) {
+            console.log(key, results.items[key].length);
+        } // for
+    });
+    
+    collectionProcess.stop();
+}, 5000);
