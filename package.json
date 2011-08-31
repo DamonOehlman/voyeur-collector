@@ -1,6 +1,6 @@
 {
 	"name": "voyeur-collector",
-	"description": "Collection agents for server statistics"
+	"description": "Collection agents for server statistics",
 	"author": "Damon Oehlman <damon.oehlman@sidelab.com>",
 	"tags": ["monitoring", "system"],
   	"version": "0.0.1",
