@@ -28,7 +28,7 @@ vows.describe('Collection to DB').addBatch({
         },
         
         'end tick in results is sensible': function(err, results) {
-            assert.ok(Math.abs(results.end - (startTick + 2000)) < 500);
+            assert.ok(Math.abs(results.end - (startTick + 2000)) < 500)
         }
     }
 }).run();
