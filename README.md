@@ -26,7 +26,18 @@ No in the above configuration, the collector will happily run up the default age
 
 The simplest way to do this is through using the [Connect](http://senchalabs.github.com/connect) middleware that is included in the voyeur package:
 
-To be completed
+If for instance you are using express, you could do something like the following:
+
+```js
+var app = express.createServer();
+
+app.configure(function() {
+    app.use(express.static(__dirname + '/public'));
+    app.use(collector.json(collector.db))
+});
+```
+
+By default this will expose a `/samples` route that will respond to both request for samples in the last 30 seconds (configurable) and also samples after a certain tick count using the `/samples/123456789` route.
 
 ## Advanced Usage
 
