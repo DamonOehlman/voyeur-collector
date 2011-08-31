@@ -9,6 +9,7 @@
 	
   	"dependencies": {
     	"cron": "0.1.x",
+    	"underscore": "1.x.x",
         "node-leveldb": "https://github.com/DamonOehlman/node-leveldb/tarball/master"
   	},
   	
